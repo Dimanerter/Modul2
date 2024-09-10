@@ -1,5 +1,6 @@
-result = None 
-if result:
-    print(result)
+user_name = input("Enter your name: ")
+
+if user_name:
+    print(f"Hello {user_name}")
 else:
-    print("Result is None, do something")
+    print("Hi Anonym!")
