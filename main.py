@@ -1,6 +1,9 @@
-num = 15
-
-if num > 10:
-    print("num больше 10")
+a = input('Введіть число')
+a = int(a)
+if a > 0:
+    print('Число додатне')
+elif a < 0:
+    print("Число від'ємне")
 else:
-    print("num не больше 10")
+    print('Це число - нуль')
+
