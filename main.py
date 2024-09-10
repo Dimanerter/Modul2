@@ -1,5 +1,5 @@
-money = 0
-if money:
-    print(f"You have {money} on your bank account")
+result = None 
+if result:
+    print(result)
 else:
-    print("you have no money on debts")
+    print("Result is None, do something")
