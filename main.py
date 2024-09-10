@@ -1,9 +1,5 @@
-a = input('Введіть число')
-a = int(a)
-if a > 0:
-    print('Число додатне')
-elif a < 0:
-    print("Число від'ємне")
+money = 0
+if money:
+    print(f"You have {money} on your bank account")
 else:
-    print('Це число - нуль')
-
+    print("you have no money on debts")
