@@ -1,6 +1,11 @@
-user_name = input("Enter your name: ")
+num = int(input(">>> "))
 
-if user_name:
-    print(f"Hello {user_name}")
+if num % 3 == 0 and num % 5 == 0:
+    print("FizzBuzz")
+elif num % 3 == 0 and num % 5 != 0:
+    print("Fizz")
+elif num % 5 == 0 and num % 3 != 0:
+    print("Buzz")
 else:
-    print("Hi Anonym!")
+    print(num)
+
