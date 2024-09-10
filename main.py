@@ -1,11 +1,12 @@
-num = int(input(">>> "))
+pets = ["dog", "fish", "cat"]
 
-if num % 3 == 0 and num % 5 == 0:
-    print("FizzBuzz")
-elif num % 3 == 0 and num % 5 != 0:
-    print("Fizz")
-elif num % 5 == 0 and num % 3 != 0:
-    print("Buzz")
-else:
-    print(num)
-
+match pets:
+    case ["dog", "cat", _]:
+        # Випадок, коли є і собака, і кіт
+        print("There's a dog and a cat.")
+    case ["dog", _, _]:
+        # Випадок, коли є тільки собака
+        print("There's a dog.")
+    case _:
+        # Випадок для інших комбінацій
+        print("No dogs.")
