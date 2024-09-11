@@ -1,12 +1,15 @@
-strok = input(">>>")
-number_of_space = 0
-number_of_char = 0
+# Зчитування рядка від користувача
+user_input = input("Введіть рядок: ")
 
-for i in strok:
-    if i == " ":
-        number_of_space += 1
-    else:
-        number_of_char += 1
+# Ініціалізація змінних для підрахунку символів та пробілів
+total_chars = len(user_input)  # загальна кількість символів у рядку
+space_count = 0  # кількість пробілів
 
-print(number_of_char)
-print(number_of_space)
+# Підрахунок кількості пробілів
+for char in user_input:
+    if char == " ":
+        space_count += 1
+
+# Виведення результатів
+print(f"Загальна кількість символів у рядку: {total_chars}")
+print(f"Кількість пробілів у рядку: {space_count}")
