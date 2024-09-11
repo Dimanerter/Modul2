@@ -1,6 +1,5 @@
-a = 0
-while a < 6:
-    a = a + 1
-    if not a % 2:
-        continue
-    print(a)
+for i in range(1, 10):
+    if i % 2 == 0:
+        print(f"{i} є парним числом.")
+    else:
+        print(f"{i} є непарним числом.")
