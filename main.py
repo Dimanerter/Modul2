@@ -1,5 +1,8 @@
-list1 = [1, 2, 3]
-list2 = ['a', 'b', 'c', 'd', 'e']
+numbers = {
+    1: "one",
+    2: "two",
+    3: "three"
+}
 
-for number, letter in zip(list1, list2):
-    print(number, letter)
+for val in numbers.values():
+    print(val)
