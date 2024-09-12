@@ -1,14 +1,9 @@
-while True:
-    age = input("How old are you? ")
-    try:
-        age = int(age)
-        if age >= 18:
-            print("Access allowed")
-            break
-        else:
-            print('Access denied')
-            break
-    except ValueError:
-        print(f'{age} is not a number. Please write number!')
-    finally:
-        print('-'*30)
+val = 'a'
+try:
+    val = int(val)
+except ValueError:
+    print(f"val {val} is not a number")
+else:
+    print(val > 0)
+finally:
+    print("This will be printed anyway")
